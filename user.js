@@ -1,4 +1,4 @@
-[
+let userList = [
   {
     id: 1,
     first_name: "Bertie",
@@ -70,3 +70,5 @@
     gender: "Male",
   },
 ];
+
+module.exports = { userList };
