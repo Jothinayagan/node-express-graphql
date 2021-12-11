@@ -6,6 +6,14 @@ const resolvers = {
       return userList;
     },
   },
+  Mutation: {
+    addUser(parent, args) {
+      const newUser = args;
+      userList.push(newUser);
+
+      return newUser;
+    },
+  },
 };
 
 module.exports = { resolvers };

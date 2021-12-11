@@ -10,9 +10,19 @@ const typeDefs = gql`
   }
 
   # Query
-
   type Query {
     getAllUsers: [User!]!
+  }
+
+  #mutution
+  type Mutation {
+    addUser(
+      id: Int!
+      first_name: String!
+      last_name: String!
+      email: String!
+      gender: String!
+    ): User!
   }
 `;
 
